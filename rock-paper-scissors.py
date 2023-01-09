@@ -3,8 +3,8 @@
 import random
 
 def game():
-    user == input("'r' for rock, 'p' for paper, 's' for scissor")
-    computer == random.choice(['r','p','s'])
+    user = input("'r' for rock, 'p' for paper, 's' for scissor")
+    computer = random.choice(['r','p','s'])
 
     # setting rules of the game
     # given the rules of the game stated r > s , p > r , s > p
@@ -19,6 +19,6 @@ def game():
 def winner(player , opponent):
     if (player == 'r' and opponent == 's') or (player == 'p' and opponent == 'r')\
         or (player == 's' and opponent == 'p'):
-        return true
+        return True
 
-print(play())
+print(game())
